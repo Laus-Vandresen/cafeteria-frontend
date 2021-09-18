@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}

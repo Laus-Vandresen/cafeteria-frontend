@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+}
+
+.delete > i {
+  cursor: pointer;
+  color: #e35e6b;
+}
+
+.container {
+  margin-top: 3rem;
+}

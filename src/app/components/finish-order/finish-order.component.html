@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Finalizar Pedido</h1>
+<div class="container">
+  <mat-form-field>
+    <input matInput placeholder="Valor Pago (R$)" (change)="changePaidValue()" [(ngModel)]="paidValue" name="price">
+  </mat-form-field>
+  <h4>Valor Total: {{ data.totalPrice | currency: 'BRL' }}</h4>
+  <h4>Troco: {{ changeValue | currency: 'BRL' }} </h4>
+  <mat-dialog-actions>
+    <button [disabled]="disableButton" mat-raised-button color="primary" mat-dialog-close (click)="finishOrder()" class="btn-finish">Concluir Pagamento</button>
+  </mat-dialog-actions>
+</div>
