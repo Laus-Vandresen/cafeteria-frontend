@@ -20,8 +20,9 @@ export class FinishOrderComponent implements OnInit {
   }
 
   finishOrder() {
-    this.orderService.closeOrder(this.data.orderId, this.paidValue, this.data.totalPrice).subscribe();
-    this.router.navigate(['/orders']);
+    this.orderService.closeOrder(this.data.orderId, this.paidValue, this.data.totalPrice).subscribe(() => {
+      this.router.navigate(['/orders']);
+    });
   }
 
   changePaidValue() {
