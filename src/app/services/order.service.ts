@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class OrderService {
 
-  baseUrl = 'http://localhost:8080/api/order'
+  baseUrl = 'https://cafeteria-java-backend.herokuapp.com/api/order'
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

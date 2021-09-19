@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductService {
 
-  baseUrl = 'http://localhost:8080/api/product'
+  baseUrl = 'https://cafeteria-java-backend.herokuapp.com/api/product'
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
