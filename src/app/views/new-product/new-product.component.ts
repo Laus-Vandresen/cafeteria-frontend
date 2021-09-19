@@ -23,12 +23,12 @@ export class NewProductComponent implements OnInit {
   createProduct() {
     this.productService.create(this.product).subscribe(() => {
       this.productService.showMessage('Produto criado com sucesso');
-      this.router.navigate(['/products']);
+      this.router.navigate(['/']);
     });
   }
 
   cancel(): void {
-    this.router.navigate(['/products']);
+    this.router.navigate(['/']);
   }
 
 }
