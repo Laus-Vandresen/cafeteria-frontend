@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "heroku-postbuild": "node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng build --prod",
     "build": "ng build --prod",
+    "build:prod": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --configuration=prod",
     "postinstall": "ng build --aot --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
